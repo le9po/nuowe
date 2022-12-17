@@ -1,4 +1,4 @@
-name: Build Docker Image
+name: ci
 on:
   workflow_dispatch:
 jobs:
@@ -10,6 +10,6 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           # 下方的name格式为：Docker Hub ID/自定义镜像名称
-          name: csafef342342esfse/uui
+          name: csafef342342esfse/eev
           username: '${{ secrets.DOCKER_USERNAME }}'
           password: '${{ secrets.DOCKER_PASSWORD }}'
